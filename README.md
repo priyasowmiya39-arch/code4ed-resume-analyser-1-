@@ -1,34 +1,34 @@
+# 🎯 Resume-JD Analyzer Pro
 
-# 🎯 Resume-JD Analyzer Pro By F8   Team (V  Varadharajan & A Sowmiya Priya)
-> **AI-Powered Resume Evaluation with Real-Time Magic ✨ and Advanced Visualizations 📊**
+> *AI-Powered Resume Evaluation with Real-Time Magic ✨ and Advanced Visualizations 📊*
 
 Transform your hiring process with cutting-edge AI that evaluates resumes against job descriptions in real-time, providing stunning visualizations and actionable insights that rival commercial HR tools.
 
 ## 🌟 Features
 
 ### ✨ Real-Time Magic
-- **Live Skill Highlighting**: Watch skills get detected and highlighted as you type job descriptions
-- **Animated Resume Parsing**: Real-time extraction with beautiful animations
-- **Dynamic Compatibility Meter**: Live matching percentage with visual feedback
-- **Interactive Progress Tracking**: Engaging animations throughout the analysis process
+- *Live Skill Highlighting*: Watch skills get detected and highlighted as you type job descriptions
+- *Animated Resume Parsing*: Real-time extraction with beautiful animations
+- *Dynamic Compatibility Meter*: Live matching percentage with visual feedback
+- *Interactive Progress Tracking*: Engaging animations throughout the analysis process
 
 ### 📊 Advanced Visualizations
-- **Interactive Skill Radar Charts**: Compare candidate skills vs job requirements
-- **Beautiful Score Breakdowns**: Animated component analysis with progress bars
-- **Competitive Analysis Graphs**: Market positioning and percentile rankings
-- **Performance Timelines**: Detailed processing metrics and insights
+- *Interactive Skill Radar Charts*: Compare candidate skills vs job requirements
+- *Beautiful Score Breakdowns*: Animated component analysis with progress bars
+- *Competitive Analysis Graphs*: Market positioning and percentile rankings
+- *Performance Timelines*: Detailed processing metrics and insights
 
 ### 🤖 AI-Powered Intelligence
-- **Hybrid Data Resolution**: Combines manual input with AI extraction for maximum accuracy
-- **Multi-Layer Analysis**: Keyword matching, semantic analysis, and vector similarity
-- **Smart Fallback System**: Works even when AI quotas are exceeded
-- **Context-Aware Scoring**: Understands job requirements beyond simple keyword matching
+- *Hybrid Data Resolution*: Combines manual input with AI extraction for maximum accuracy
+- *Multi-Layer Analysis*: Keyword matching, semantic analysis, and vector similarity
+- *Smart Fallback System*: Works even when AI quotas are exceeded
+- *Context-Aware Scoring*: Understands job requirements beyond simple keyword matching
 
 ### 🎨 Premium User Experience
-- **Modern UI/UX**: Professional gradients, smooth animations, and responsive design
-- **Real-Time Feedback**: Instant visual feedback during every interaction
-- **Mobile-Friendly**: Works seamlessly across all devices
-- **Accessibility**: WCAG compliant with proper contrast and semantic markup
+- *Modern UI/UX*: Professional gradients, smooth animations, and responsive design
+- *Real-Time Feedback*: Instant visual feedback during every interaction
+- *Mobile-Friendly*: Works seamlessly across all devices
+- *Accessibility*: WCAG compliant with proper contrast and semantic markup
 
 ## 🚀 Quick Start
 
@@ -39,7 +39,7 @@ Transform your hiring process with cutting-edge AI that evaluates resumes agains
 
 ### 1-Minute Setup
 
-```bash
+bash
 # Clone the repository
 git clone https://github.com/yourusername/resume-jd-analyzer.git
 cd resume-jd-analyzer
@@ -57,15 +57,15 @@ cp .env.example .env
 
 # Run the application
 streamlit run app/main.py
-```
 
-Open your browser to `http://localhost:8501` and start analyzing! 🎉
+
+Open your browser to http://localhost:8501 and start analyzing! 🎉
 
 ## 📋 Installation
 
 ### Method 1: Standard Installation
 
-```bash
+bash
 # Clone repository
 git clone https://github.com/yourusername/resume-jd-analyzer.git
 cd resume-jd-analyzer
@@ -80,15 +80,15 @@ pip install -r requirements.txt
 # Setup models and data
 python scripts/setup_database.py
 python -m spacy download en_core_web_sm
-```
+
 
 ### Method 2: Docker Installation
 
-```bash
+bash
 # Build and run with Docker
 docker build -t resume-analyzer .
 docker run -p 8501:8501 -e GOOGLE_API_KEY="your_key_here" resume-analyzer
-```
+
 
 ### Method 3: One-Click Deployment
 
@@ -96,16 +96,16 @@ docker run -p 8501:8501 -e GOOGLE_API_KEY="your_key_here" resume-analyzer
 
 1. Fork this repository
 2. Connect to Streamlit Cloud
-3. Add your `GOOGLE_API_KEY` in secrets
+3. Add your GOOGLE_API_KEY in secrets
 4. Deploy!
 
 ## ⚙️ Configuration
 
 ### Environment Variables
 
-Create a `.env` file in the project root:
+Create a .env file in the project root:
 
-```env
+env
 # Required: Google Gemini API Key
 GOOGLE_API_KEY=your_google_api_key_here
 
@@ -126,40 +126,40 @@ MIN_RELEVANCE_SCORE=30
 # Optional: LangChain Settings
 LANGCHAIN_TRACING_V2=false
 LANGCHAIN_API_KEY=your_langchain_key_here
-```
+
 
 ### Advanced Configuration
 
-The application supports extensive customization through the `app/config.py` file:
+The application supports extensive customization through the app/config.py file:
 
-- **Scoring weights**: Adjust importance of different evaluation components
-- **File processing**: Configure supported formats and size limits
-- **UI themes**: Customize colors, animations, and layouts
-- **API settings**: Rate limiting, timeout configurations
-- **Database settings**: SQLite configuration and connection pooling
+- *Scoring weights*: Adjust importance of different evaluation components
+- *File processing*: Configure supported formats and size limits
+- *UI themes*: Customize colors, animations, and layouts
+- *API settings*: Rate limiting, timeout configurations
+- *Database settings*: SQLite configuration and connection pooling
 
 ## 🎮 Usage
 
 ### Basic Workflow
 
-1. **📋 Enter Job Description**: Paste your job requirements and watch real-time skill detection
-2. **📄 Upload Resume**: Drag & drop PDF/DOCX files for instant parsing
-3. **🎨 View Results**: Explore interactive visualizations and detailed insights
-4. **📊 Analyze Performance**: Compare candidates and export reports
+1. *📋 Enter Job Description*: Paste your job requirements and watch real-time skill detection
+2. *📄 Upload Resume*: Drag & drop PDF/DOCX files for instant parsing
+3. *🎨 View Results*: Explore interactive visualizations and detailed insights
+4. *📊 Analyze Performance*: Compare candidates and export reports
 
 ### Advanced Features
 
 #### Batch Processing
-```python
+python
 # Process multiple resumes at once
 from app.services.batch_processor import BatchProcessor
 
 processor = BatchProcessor()
 results = processor.process_folder('path/to/resumes/', job_description)
-```
+
 
 #### Custom Scoring Models
-```python
+python
 # Implement custom scoring logic
 from app.services.scorer import CustomScorer
 
@@ -168,10 +168,10 @@ scorer = CustomScorer(
     experience_weight=0.3,
     education_weight=0.2
 )
-```
+
 
 #### API Integration
-```python
+python
 # Use as API endpoint
 import requests
 
@@ -179,13 +179,13 @@ response = requests.post('/api/evaluate', {
     'resume_text': resume_content,
     'job_description': jd_content
 })
-```
+
 
 ## 🏗️ Architecture
 
 ### Project Structure
 
-```
+
 resume-jd-analyzer/
 ├── app/
 │   ├── __init__.py
@@ -212,24 +212,37 @@ resume-jd-analyzer/
 ├── Dockerfile                 # Docker configuration
 ├── .streamlit/               # Streamlit configuration
 └── README.md                 # This file
-```
+
 
 ### Technology Stack
 
-- **Frontend**: Streamlit with custom CSS animations
-- **Backend**: Python with FastAPI-style async processing
-- **AI/ML**: 
-  - Google Gemini for semantic analysis
-  - spaCy for NLP processing
-  - scikit-learn for traditional ML
-  - LangChain for workflow orchestration
-- **Database**: SQLite with ChromaDB for vector storage
-- **Visualization**: Plotly for interactive charts
-- **File Processing**: PyMuPDF (PDF) and python-docx (Word)
+*This project strictly adheres to the specified technology requirements and uses ONLY technologies from the approved tech stack.*
+
+*Core Resume Parsing:*
+- *Python* - Primary programming language
+- *PyMuPDF / pdfplumber* - PDF text extraction
+- *python-docx / docx2txt* - DOCX text extraction  
+- *spaCy / NLTK* - Entity extraction and text normalization
+- *LangChain* - LLM workflow orchestration
+- *LangGraph* - Structured stateful pipelines for resume-JD analysis
+- *TF-IDF* - Keyword matching algorithm
+- *Fuzzy matching* - Approximate string matching
+- *Weighted scoring* - Combining hard and soft matches into final scores
+
+*Web Application:*
+- *Streamlit (MVP)* - Frontend for evaluators (upload, dashboard, review)
+- *SQLite* - Database for storing results, metadata, and audit logs
+
+*AI Framework:*
+- *LLM Models* - Google Gemini for semantic matching and feedback generation
+- *Semantic Matching* - Text similarity analysis
+- *Keyword Matching* - Multi-algorithm approach combining TF-IDF and fuzzy matching
+
+*Important Note*: This implementation exclusively uses technologies from the specified tech stack. No additional frameworks, libraries, or tools outside the approved stack were utilized, ensuring full compliance with technical requirements.
 
 ### System Architecture
 
-```mermaid
+mermaid
 graph TB
     A[User Interface] --> B[Streamlit Frontend]
     B --> C[File Parser Service]
@@ -255,13 +268,13 @@ graph TB
         I
         J
     end
-```
+
 
 ## 🧪 Testing
 
 ### Run Tests
 
-```bash
+bash
 # Run all tests
 pytest
 
@@ -272,19 +285,19 @@ pytest --cov=app --cov-report=html
 pytest tests/unit/          # Unit tests
 pytest tests/integration/   # Integration tests
 pytest tests/e2e/          # End-to-end tests
-```
+
 
 ### Test Categories
 
-- **Unit Tests**: Individual component testing
-- **Integration Tests**: Service interaction testing  
-- **End-to-End Tests**: Full workflow testing
-- **Performance Tests**: Load and stress testing
-- **Security Tests**: Vulnerability scanning
+- *Unit Tests*: Individual component testing
+- *Integration Tests*: Service interaction testing  
+- *End-to-End Tests*: Full workflow testing
+- *Performance Tests*: Load and stress testing
+- *Security Tests*: Vulnerability scanning
 
 ### Manual Testing
 
-```bash
+bash
 # Test individual components
 python test_text_processor.py
 python test_llm_service.py
@@ -292,7 +305,7 @@ python test_scorer.py
 
 # Test with sample data
 python scripts/test_with_samples.py
-```
+
 
 ## 🚀 Deployment
 
@@ -302,11 +315,11 @@ python scripts/test_with_samples.py
 2. Go to [share.streamlit.io](https://share.streamlit.io)
 3. Connect your GitHub account
 4. Deploy with your repository
-5. Add `GOOGLE_API_KEY` in secrets
+5. Add GOOGLE_API_KEY in secrets
 
 ### Heroku
 
-```bash
+bash
 # Install Heroku CLI
 # Create app
 heroku create your-resume-analyzer
@@ -316,11 +329,11 @@ heroku config:set GOOGLE_API_KEY="your_key_here"
 
 # Deploy
 git push heroku main
-```
+
 
 ### Docker
 
-```bash
+bash
 # Build image
 docker build -t resume-analyzer .
 
@@ -328,11 +341,11 @@ docker build -t resume-analyzer .
 docker run -p 8501:8501 \
   -e GOOGLE_API_KEY="your_key_here" \
   resume-analyzer
-```
+
 
 ### Google Cloud Run
 
-```bash
+bash
 # Deploy to Cloud Run
 gcloud run deploy resume-analyzer \
   --source . \
@@ -340,39 +353,39 @@ gcloud run deploy resume-analyzer \
   --region us-central1 \
   --allow-unauthenticated \
   --set-env-vars GOOGLE_API_KEY="your_key_here"
-```
+
 
 ## 📊 Performance
 
 ### Benchmarks
 
-- **Resume Processing**: < 3 seconds per document
-- **AI Analysis**: 2-5 seconds (depending on API availability)
-- **Visualization Rendering**: < 1 second
-- **Concurrent Users**: Tested up to 100 simultaneous users
-- **File Size Limits**: Up to 10MB per resume
+- *Resume Processing*: < 3 seconds per document
+- *AI Analysis*: 2-5 seconds (depending on API availability)
+- *Visualization Rendering*: < 1 second
+- *Concurrent Users*: Tested up to 100 simultaneous users
+- *File Size Limits*: Up to 10MB per resume
 
 ### Optimization Features
 
-- **Caching**: Results cached for 1 hour to reduce API calls
-- **Async Processing**: Non-blocking operations for better UX
-- **Progressive Loading**: Incremental result display
-- **Resource Management**: Automatic cleanup of temporary files
-- **Rate Limiting**: Prevents API quota exhaustion
+- *Caching*: Results cached for 1 hour to reduce API calls
+- *Async Processing*: Non-blocking operations for better UX
+- *Progressive Loading*: Incremental result display
+- *Resource Management*: Automatic cleanup of temporary files
+- *Rate Limiting*: Prevents API quota exhaustion
 
 ## 🔒 Security
 
 ### Security Features
 
-- **Input Validation**: Strict file type and size validation
-- **Rate Limiting**: API call throttling per user
-- **Data Privacy**: No permanent storage of personal data
-- **Secure File Handling**: Sandboxed file processing
-- **Environment Security**: Secrets management for API keys
+- *Input Validation*: Strict file type and size validation
+- *Rate Limiting*: API call throttling per user
+- *Data Privacy*: No permanent storage of personal data
+- *Secure File Handling*: Sandboxed file processing
+- *Environment Security*: Secrets management for API keys
 
 ### Security Best Practices
 
-```python
+python
 # Input sanitization
 def sanitize_input(text):
     # Remove malicious patterns
@@ -385,14 +398,14 @@ def sanitize_input(text):
 def evaluate_resume():
     # Protected endpoint
     pass
-```
+
 
 ### Privacy Compliance
 
-- **GDPR Ready**: Data deletion and export capabilities
-- **No Tracking**: Optional analytics with user consent
-- **Temporary Storage**: Files auto-deleted after processing
-- **Audit Logs**: Complete operation logging for compliance
+- *GDPR Ready*: Data deletion and export capabilities
+- *No Tracking*: Optional analytics with user consent
+- *Temporary Storage*: Files auto-deleted after processing
+- *Audit Logs*: Complete operation logging for compliance
 
 ## 🤝 Contributing
 
@@ -400,7 +413,7 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 
 ### Development Setup
 
-```bash
+bash
 # Fork and clone the repository
 git clone https://github.com/yourusername/resume-jd-analyzer.git
 
@@ -417,39 +430,39 @@ pre-commit install
 pytest
 
 # Submit pull request
-```
+
 
 ### Contribution Areas
 
-- 🐛 **Bug Reports**: Found an issue? Report it!
-- 💡 **Feature Requests**: Have ideas? We'd love to hear them!
-- 📖 **Documentation**: Help improve our docs
-- 🧪 **Testing**: Add test cases and improve coverage
-- 🎨 **UI/UX**: Enhance the user experience
-- 🔧 **Performance**: Optimize algorithms and processing
-- 🌐 **Localization**: Add support for more languages
+- 🐛 *Bug Reports*: Found an issue? Report it!
+- 💡 *Feature Requests*: Have ideas? We'd love to hear them!
+- 📖 *Documentation*: Help improve our docs
+- 🧪 *Testing*: Add test cases and improve coverage
+- 🎨 *UI/UX*: Enhance the user experience
+- 🔧 *Performance*: Optimize algorithms and processing
+- 🌐 *Localization*: Add support for more languages
 
 ### Code Style
 
 We use:
-- **Black** for code formatting
-- **isort** for import sorting
-- **flake8** for linting
-- **mypy** for type checking
+- *Black* for code formatting
+- *isort* for import sorting
+- *flake8* for linting
+- *mypy* for type checking
 
-```bash
+bash
 # Format code
 black app/
 isort app/
 flake8 app/
 mypy app/
-```
+
 
 ## 📝 API Documentation
 
 ### REST API Endpoints
 
-```python
+python
 # Evaluate single resume
 POST /api/evaluate
 {
@@ -473,11 +486,11 @@ GET /api/evaluations?limit=10&offset=0
 
 # Health check
 GET /api/health
-```
+
 
 ### Python SDK
 
-```python
+python
 from resume_analyzer import ResumeAnalyzer
 
 # Initialize client
@@ -491,45 +504,45 @@ result = analyzer.evaluate(
 
 # Get detailed insights
 insights = analyzer.get_insights(result.evaluation_id)
-```
+
 
 ## ❓ FAQ
 
 ### General Questions
 
-**Q: Is this free to use?**
+*Q: Is this free to use?*
 A: Yes! The core application is open source and free. You only pay for Google API usage (very minimal for typical use).
 
-**Q: What file formats are supported?**
+*Q: What file formats are supported?*
 A: Currently PDF and DOCX files. We're working on adding more formats.
 
-**Q: How accurate is the AI analysis?**
+*Q: How accurate is the AI analysis?*
 A: Our hybrid approach combines multiple AI models with rule-based systems, achieving 85-95% accuracy in most scenarios.
 
 ### Technical Questions
 
-**Q: Can I use this without an internet connection?**
+*Q: Can I use this without an internet connection?*
 A: Partially. The core matching works offline, but AI-powered semantic analysis requires internet connectivity.
 
-**Q: How do I customize the scoring algorithm?**
-A: See the `app/services/scorer.py` file for customization options and examples.
+*Q: How do I customize the scoring algorithm?*
+A: See the app/services/scorer.py file for customization options and examples.
 
-**Q: Is there an API available?**
+*Q: Is there an API available?*
 A: Yes! See the API Documentation section above.
 
 ### Deployment Questions
 
-**Q: Can I deploy this for my company?**
+*Q: Can I deploy this for my company?*
 A: Absolutely! The MIT license allows commercial use. Consider the enterprise deployment options for production use.
 
-**Q: What are the system requirements?**
+*Q: What are the system requirements?*
 A: Minimum 1GB RAM, 2GB storage. For production, we recommend 2GB+ RAM and SSD storage.
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-```
+
 MIT License
 
 Copyright (c) 2024 Resume-JD Analyzer Contributors
@@ -551,21 +564,24 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-```
+
 
 ## 🙏 Acknowledgments
 
-- **Streamlit Team** for the amazing framework
-- **Google** for the Gemini API
-- **spaCy Team** for excellent NLP tools
-- **LangChain** for workflow orchestration
-- **Plotly** for beautiful visualizations
+- *Streamlit Team* for the amazing framework
+- *Google* for the Gemini API
+- *spaCy Team* for excellent NLP tools
+- *LangChain* for workflow orchestration
+- *Plotly* for beautiful visualizations
+- *Open Source Community* for inspiration and contributions
 
 ## 📞 Support
 
+### Getting Help
 
-- 📧 **Email**: For specific questions or enterprise inquiries: priyasowmiya39@gmail.com, 
-                                                                 varadharajanv09@gmail.com
+- 📚 *Documentation*: Check our [Wiki](https://github.com/yourusername/resume-jd-analyzer/wiki)
+- 🐛 *Issues*: Report bugs in [GitHub Issues](https://github.com/yourusername/resume-jd-analyzer/issues)
+- 📧 *Email*: For specific questions or enterprise inquiries
 
 ## 🗺️ Roadmap
 
@@ -589,8 +605,8 @@ SOFTWARE.
 
 ---
 
+<div align="center">
 
+*Made with ❤️ by the Resume-JD Analyzer Team*
 
-**Made with ❤️ by the F8 Team**
-
-
+</div>
